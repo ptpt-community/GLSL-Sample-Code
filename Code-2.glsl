@@ -21,5 +21,5 @@ void main()
   vec3 color = mod(bright,2.0) > .5 ? vec3(1,1,0) : vec3(0,1,1); 
 
   float diffuse = .5 + dot(fNormal,dir);
-  gl_FragColor = vec4(diffuse color, 1.0);
+  gl_FragColor = vec4(diffuse, color, 1.0);
 }
