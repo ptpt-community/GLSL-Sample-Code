@@ -16,5 +16,5 @@ void main()
   vec3 color = vec3(1, pulse(cpos.y,10.0),1); 
 
   float diffuse = .5 + dot(fNormal,dir);
-  gl_FragColor = vec4(diffuse color, 1.0);
+  gl_FragColor = vec4(diffuse, color, 1.0);
 }
